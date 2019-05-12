@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Please don’t theme our apps</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="icon" type="image/png" href="/favicon.png" />
+</head>
+
+<body>
+
+  <div class="intro">
+    <div class="container">
+			<img src="assets/leaf.svg" class="intro-icon">
+      <h1 class="title">Please don’t theme our apps</h1>
+      <p class="subtitle">An open letter from independent app developers to the wider GNOME community</p>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <p>We are developers and designers making apps for the GNOME platform. We take pride in our craft and work hard to make sure our applications are a great experience for people.</p>
+
+    <p>Unfortunately, all our efforts designing, developing, and testing our apps are made futile by theming in many cases.</p>
+
+    <br>
+
+    <div class="point">
+      <img src="assets/stylesheets.png" class="point-image">
+      <p><b>GTK Stylesheets</b> can make applications look broken, and even unusable.
+    </div>
+
+    <div class="point">
+      <img src="assets/iconthemes.png" class="point-image">
+      <p><b>Icon Themes</b> can change icon metaphors, leading to interfaces with icons that don’t express what the developer intended.</p>
+    </div>
+
+    <div class="point">
+      <img src="assets/appicons.png" class="point-image">
+      <p><b>App Icons</b> are the identity of an app. Changing an app’s icon denies the developer the possibility to control their brand.
+    </div>
+
+    <small class="caption">Note: These examples are purely illustrative, and not intended to call out individual themes. No hard feelings, theme devs ❤️</small>
+
+    <br>
+
+    <p>There are also less direct, second-order consequences, including:</p>
+
+    <p><b>Appstream Screenshots</b> (the screenshots used in GNOME Software or Flathub) are not very useful if they look nothing like the real app does once you install it.</p>
+
+    <p><b>User Help and Documentation</b> are similarly useless if UI elements on your system are different from the ones described in the documentation.</p>
+
+    <br>
+
+    <p>These blog posts explain some of the issues with theming in more detail:</p>
+    <p><a href="https://blogs.gnome.org/tbernard/2018/10/15/restyling-apps-at-scale">Restyling apps at scale</a>—Tobias Bernard</p>
+    <p><a href="https://samuelhewitt.com/blog/2017-11-26-linux-themes-third-party-icons">Linux Themes & Third-Party Icons</a>—Sam Hewitt</p>
+    <p><a href="https://samuelhewitt.com/blog/2019-01-18-addressing-icon-themes">Adressing Icon Themes (Again)</a>—Sam Hewitt</p>
+
+    <br>
+
+    <p><b>This is why we ask respectfully that our applications not be themed</b>. They are built and tested for the upstream GNOME stylesheet, icons, and fonts, so that’s what they should look like on peoples’ systems.</p>
+
+    <p>Though we could disable theming directly in our apps, we do not want to resort to this. We believe that a technical solution would likely not be effective, because this is not a technical problem.</p>
+
+    <p>The problem we’re facing is the expectation that apps can be arbitrarily restyled without manual work, which is and has always been an illusion. Until this perception changes, there is little hope of improving the situation. We’re trying to do our part in raising awareness with this letter.</p>
+
+    <p><b>If you like to tinker with your own system, that’s fine with us</b>. However, if you change things like stylesheets and icons, you should be aware that you’re in unsupported territory. Any issues you encounter should be reported to the theme developer, not the app developer.</p>
+
+    <p>On a platform level, we believe <b>GTK should stop forcing a single stylesheet on all apps by default</b>. Instead of apps having to opt out of this by hardcoding a stylesheet, they should use the platform stylesheet unless they opt in to something else. We relize this is a complicated issue, but assuming every app works with every stylesheet is a bad default.</p>
+
+    <p><b>If you are a distribution who changes the system stylesheet and icons, please reconsider this decision</b>. Changing third-party apps without any QA is reckless, and would be unacceptable on any other platform. Your actions are hurting us app developers a great deal, and are damaging to the entire ecosystem beyond your distribution.</p>
+
+    <p>We understand the need for distributions to stand out. However, we urge you to find ways to do this without taking away our agency. We are tired of having to do extra work for setups we never intended to support, just to have that used against us when people tell us the breakage from theming is "not that bad". You are not doing this to Blender, Atom, Telegram, or other third party apps. Just because our apps use GTK that does not mean we’re ok with them being changed from under us.</p>
+
+    <p>Since you are shipping the GNOME platform, we assume you want this ecosystem to be healthy. If you do, we ask that you please stop theming our apps.</p>
+
+    <br>
+
+    <p>Signed,</p>
+
+    <ul>
+      <li><b>Bilal Elmoussaoui</b> <br> Maintainer of <a href="https://gitlab.gnome.org/World/Authenticator">Authenticator</a></li>
+      <li><b>Cédric Bellegarde</b>, <br> Maintainer of <a href="https://gitlab.gnome.org/World/lollypop">Lollypop</a>, <a href="https://gitlab.gnome.org/World/eolie">Eolie</a>, and <a href="https://gitlab.gnome.org/gnumdk/passbook">Passbook</a></li>
+      <li><b>Daniel García Moreno</b>, <br> Maintainer of <a href="https://gitlab.gnome.org/GNOME/Fractal">Fractal</a> and <a href="https://gitlab.gnome.org/danigm/timetrack">Timetrack</a></li>
+      <li><b>Falk Alexander Seidl</b>, <br> Maintainer of <a href="https://gitlab.gnome.org/World/PasswordSafe">Password Safe</a></li>
+      <li><b>Felix Häcker</b>, <br> Maintainer of <a href="https://github.com/haecker-felix/Shortwave">Gradio/Shortwave</a>, <a href="https://gitlab.gnome.org/World/Fragments">Fragments</a>, and <a href="https://gitlab.gnome.org/World/Remotely">Remotely</a></li>
+      <li><b>Jordan Petridis</b>, <br> Maintainer of <a href="https://gitlab.gnome.org/World/podcasts">Podcasts</a></li>
+      <li><b>Julian Sparber</b>, <br> Core contributor to <a href="https://gitlab.gnome.org/GNOME/Fractal">Fractal</a>, maintainer of <a href="https://gitlab.gnome.org/jsparber/teleport">Teleport</a></li>
+      <li><b>Manuel Genovés</b>, <br> Maintainer of <a href="https://github.com/UberWriter/uberwriter">UberWriter</a></li>
+      <li><b>Tobias Bernard</b>, <br> Designer of <a href="https://gitlab.gnome.org/World/Fragments">Fragments</a> and <a href="https://gitlab.gnome.org/World/podcasts">Podcasts</a> (among others)</li>
+      <li><b>Zander Brown</b>, <br> Maintainer of <a href="https://gitlab.gnome.org/World/icon-tool">Icon Preview</a></li>
+
+      <br>
+
+      <small class="caption">Note: Even though some of us are Foundation members or work on GNOME, these are our personal views as individuals, and not those of the GNOME Project, the GNOME Foundation, or our employers.</small>
+
+    </ul>
+
+  </div>
+
+	<div class="join">
+    <div class="container">
+			<h2>Sign the Letter</h2>
+	    <p>Are you developing (or contributing to) an app for GNOME and would like to sign this letter? Open an <a href="https://github.com/do-not-theme/do-not-theme.github.io/issues">issue</a> or <a href="https://github.com/do-not-theme/do-not-theme.github.io/pulls">merge request</a>.</p>
+
+			<br>
+
+			<h2>Get the Badge</h2>
+			<img src="assets/podcasts-badge.png" class="image">
+
+			<p>Do you want to show your support, and also make it clear that your app does not officially support themes? Include this stylish badge in your project’s Gitlab project header or Github README:</p>
+
+			<img src="/badge.svg" width="250px">
+
+			<br>
+
+			<p>To add the badge to your <a href="https://gitlab.gnome.org/help/user/project/badges#project-badges">Gitlab project’s header</a>, go to <b>Settings&nbsp→&nbspGeneral&nbsp→&nbspBadges</b> and set the link and image URLs like so:</p>
+
+			<div class="code-block">
+				<code><b>Link URL</b>: https://stopthemingmy.app</code></br>
+				<code><b>Badge Image URL</b>: https://stopthemingmy.app/badge.svg</code>
+    	</div>
+
+			<p>To add the badge to your README, use this snippet:</p>
+
+			<div class="code-block">
+				<code>
+					[![Please do not theme this app](https://stopthemingmy.app/badge.svg)](https://stopthemingmy.app)
+				</code>
+    	</div>
+
+    </div>
+  </div>
+
+
+	    <footer>
+	      <p>&copy; Do Not Theme, 2019</p>
+
+				<p>
+	      	<a href="https://github.com/do-not-theme/do-not-theme.github.io">Website source</a>
+				</p>
+
+	    </footer>
+
+</body>
+
+</html>

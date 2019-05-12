@@ -1,0 +1,178 @@
+@font-face {
+    font-family: 'Work Sans';
+    src: url('fonts/worksans-regular.woff2');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('fonts/worksans-bold.woff2');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('fonts/worksans-black.woff2');
+    font-weight: 900;
+}
+
+/* Typography */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+@media screen and (min-width: 500px) and (min-height: 500px) {
+  html, body {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1000px) and (min-height: 800px) {
+  html, body {
+    font-size: 22px;
+  }
+}
+body {
+	color: #241f31;
+	background-color: #fff;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 10px;
+  font-weight: 900;
+  line-height: 1.25;
+}
+a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #26a269;
+  cursor: pointer;
+}
+a:hover {
+  text-decoration: underline;
+}
+b {
+  font-weight: 600;
+}
+ul {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  list-style: none;
+}
+ul {
+  padding-left: 0;
+}
+p, li {
+  margin-bottom: 1em;
+}
+hr {
+  width: 50%;
+  margin: 3em auto;
+  color: #333;
+}
+small {
+  color: #777;
+}
+.image {
+  display: block;
+  width: 100%;
+  border-radius: 0.3rem;
+}
+
+/* Layout */
+.container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 720px;
+}
+
+/* Singletons */
+.intro {
+  background-color: #2ec27e;
+  margin: 0 0 4rem;
+  padding: 6rem 0 3rem;
+  text-align: center;
+}
+.intro-icon {
+  margin: 0 auto 1rem;
+}
+.intro .container {
+  max-width: 500px;
+}
+.title {
+  font-size: 2em;
+  line-height: 1;
+}
+@media screen and (min-width: 400px) {
+  .title {
+    font-size: 2.5em;
+    line-height: 1.25;
+  }
+}
+.subtitle {
+  margin-top: 2em;
+  font-size: 1em;
+  font-weight: 600;
+}
+.caption {
+  display: block;
+  margin-top: 1rem;
+}
+
+.point-image {
+  width: 100%;
+  border-radius: 0.3rem;
+}
+.point > p {
+  margin: 0.4rem 0 2rem;
+}
+@media screen and (min-width: 660px) {
+  .point {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .point > p {
+    margin: 0.4rem 0 1rem;
+  }
+  .point-image {
+    flex-shrink: 0;
+
+    max-width: 12rem;
+    margin: 0.5rem 1rem 0.5rem 0;
+  }
+}
+
+.join {
+  background-color: #3d3846;
+  color: white;
+  margin: 5rem 0 0;
+  padding: 4rem 0 6rem;
+}
+.join a,
+footer a {
+  color: #57e389;
+}
+.code-block {
+  padding: 0.8rem;
+  font-size: 0.8rem;
+  border-radius: 0.3rem;
+  background-color: #241f31;
+}
+
+/* Footer */
+footer {
+  color: white;
+  background-color: #241f31;
+	text-align: center;
+	padding: 5em 0 3em;
+	font-size: 1em;
+}
