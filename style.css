@@ -146,7 +146,7 @@ small {
   .point-image {
     flex-shrink: 0;
 
-    max-width: 12rem;
+    max-width: 14rem;
     margin: 0.5rem 1rem 0.5rem 0;
   }
 }
@@ -155,7 +155,10 @@ small {
   background-color: #3d3846;
   color: white;
   margin: 5rem 0 0;
-  padding: 4rem 0 6rem;
+  padding: 2rem 0 6rem;
+}
+.join h2 {
+  margin-top: 3rem;
 }
 .join a,
 footer a {
