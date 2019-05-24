@@ -41,8 +41,9 @@ html, body {
   }
 }
 body {
-	color: #241f31;
-	background-color: #fff;
+        font-family: 'Comic Sans MS';
+        color: #172c32;
+        background-color: #322424;
 }
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 10px;
@@ -96,10 +97,11 @@ small {
 
 /* Singletons */
 .intro {
-  background-color: #2ec27e;
   margin: 0 0 2rem;
   padding: 6rem 0 3rem;
   text-align: center;
+  background-color: #de00dd;
+  color: #24c40b;
 }
 .intro-icon {
   margin: 0 auto 1rem;
@@ -152,8 +154,8 @@ small {
 }
 
 .join {
-  background-color: #3d3846;
-  color: white;
+  background-color: #00ffb7;
+  color: #b300ff5e;
   margin: 5rem 0 0;
   padding: 2rem 0 6rem;
 }
@@ -168,15 +170,17 @@ footer a {
   padding: 0.8rem;
   font-size: 0.8rem;
   border-radius: 0.3rem;
-  background-color: #241f31;
+  background-color: red;
+  color: #ff5900;
 }
 
 .notice {
   font-size: 0.7em;
   padding: 0rem 1rem;
-  background-color: #f9f06b;
+  background-color: #b9c926;
   border: 2px solid #f6d32d;
   border-radius: 0.3rem;
+  color: #cfcf50;
 }
 
 /* Footer */
