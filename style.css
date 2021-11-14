@@ -40,9 +40,26 @@ html, body {
     font-size: 22px;
   }
 }
+:root {
+  --font-color: #241f31;
+  --darker-font-color: #5e5e5e;
+  --background-color: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --font-color: #e8e8e8;
+    --darker-font-color: #b7b7b7;
+    --background-color: #241f31;
+  }
+  .subtitle, .title, .notice {
+    color: #241f31;
+  }
+}
+
 body {
-	color: #241f31;
-	background-color: #fff;
+	color: var(--font-color);
+	background-color: var(--background-color);
 }
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 10px;
@@ -78,7 +95,7 @@ hr {
   color: #333;
 }
 small {
-  color: #777;
+  color: var(--darker-font-color);
 }
 .image {
   display: block;
